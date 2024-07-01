@@ -624,6 +624,7 @@ nav ul {
   .nav-icons-div {
     flex-direction: column;
     margin-bottom: 25px;
+    text-align: center;
   }
 
   .main-photo {
@@ -643,7 +644,7 @@ nav ul {
   }
 
   .main-photo-p-big {
-    font-size: 100px;
+    font-size: 90px;
     line-height: 100px;
     font-weight: 900;
     color: white;
