@@ -7,7 +7,7 @@ body {
 }
 
 .main-body {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 /*Navbar CSS*/
@@ -128,6 +128,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 25px;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -278,6 +279,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 500px;
   flex-wrap: wrap;
 }
 
