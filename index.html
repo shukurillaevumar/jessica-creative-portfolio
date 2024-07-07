@@ -8,8 +8,8 @@
   </head>
   <body>
     <div class="main-body">
-      <nav>
-        <ul>
+      <nav class="topnav">
+        <ul id="myLinks">
           <div class="separator-div">
             <img src="nav-icons/Jessica..png" alt="Jessica" />
             <div class="nav-icons-div">
@@ -61,8 +61,13 @@
               />
             </div>
           </div>
-
-          <img src="nav-icons/gg_menu-right-alt.png" alt="menu" />
+          <a
+            href="javascript:void(0);"
+            class="menu-icon"
+            onclick="navbarFunction()"
+          >
+            <img src="nav-icons/gg_menu-right-alt.png" alt="menu" />
+          </a>
         </ul>
       </nav>
       <div class="main-photo">
@@ -237,41 +242,119 @@
 
       <div class="testimonials">
         <p class="testimonials-p-title">Testimonials</p>
-        <div class="div-group">
-          <div class="testimonials-div">
-            <p class="testimonials-p-header">
-              “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
-              tasse cursus. Suspen dise tempus oncu enim pellen tesque est in
-              neque, elit habi mattis.”
-            </p>
-            <p class="testimonials-p-author">Kelly Garcia</p>
-            <p class="testimonials-p-job-title">CEO at Liami</p>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="div-group">
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
+                  tasse cursus. Suspen dise tempus oncu enim pellen tesque est
+                  in neque, elit habi mattis.”
+                </p>
+                <p class="testimonials-p-author">Kelly Garcia</p>
+                <p class="testimonials-p-job-title">CEO at Liami</p>
+              </div>
+
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “Feugiat hac porttitor sem dictum velit, elementum odio. Sed
+                  ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis
+                  placerat proin tortor mattis in neque.”
+                </p>
+                <p class="testimonials-p-author">Jacque Adler</p>
+                <p class="testimonials-p-job-title">Owner of Jacque</p>
+              </div>
+
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “Quis nibh ut bibendum nisl quis placerat proin tortor mattis
+                  in neque. Feugiat hac porttitor sem dictum velit, elementum
+                  odio sed eget facilisis.”
+                </p>
+                <p class="testimonials-p-author">Kerry Frank</p>
+                <p class="testimonials-p-job-title">Owner of KerryFashion</p>
+              </div>
+            </div>
           </div>
 
-          <div class="testimonials-div">
-            <p class="testimonials-p-header">
-              “Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum
-              quis nec eget facilisis. Quis nibh ut bibendum nisl quis placerat
-              proin tortor mattis in neque.”
-            </p>
-            <p class="testimonials-p-author">Jacque Adler</p>
-            <p class="testimonials-p-job-title">Owner of Jacque</p>
+          <div class="mySlides fade">
+            <div class="div-group">
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “Feugiat hac porttitor sem dictum velit, elementum odio. Sed
+                  ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis
+                  placerat proin tortor mattis in neque.”
+                </p>
+                <p class="testimonials-p-author">Jacque Adler</p>
+                <p class="testimonials-p-job-title">Owner of Jacque</p>
+              </div>
+
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
+                  tasse cursus. Suspen dise tempus oncu enim pellen tesque est
+                  in neque, elit habi mattis.”
+                </p>
+                <p class="testimonials-p-author">Kelly Garcia</p>
+                <p class="testimonials-p-job-title">CEO at Liami</p>
+              </div>
+
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “Quis nibh ut bibendum nisl quis placerat proin tortor mattis
+                  in neque. Feugiat hac porttitor sem dictum velit, elementum
+                  odio sed eget facilisis.”
+                </p>
+                <p class="testimonials-p-author">Kerry Frank</p>
+                <p class="testimonials-p-job-title">Owner of KerryFashion</p>
+              </div>
+            </div>
           </div>
 
-          <div class="testimonials-div">
-            <p class="testimonials-p-header">
-              “Quis nibh ut bibendum nisl quis placerat proin tortor mattis in
-              neque. Feugiat hac porttitor sem dictum velit, elementum odio sed
-              eget facilisis.”
-            </p>
-            <p class="testimonials-p-author">Kerry Frank</p>
-            <p class="testimonials-p-job-title">Owner of KerryFashion</p>
+          <div class="mySlides fade">
+            <div class="div-group">
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “Feugiat hac porttitor sem dictum velit, elementum odio. Sed
+                  ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis
+                  placerat proin tortor mattis in neque.”
+                </p>
+                <p class="testimonials-p-author">Jacque Adler</p>
+                <p class="testimonials-p-job-title">Owner of Jacque</p>
+              </div>
+
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “Quis nibh ut bibendum nisl quis placerat proin tortor mattis
+                  in neque. Feugiat hac porttitor sem dictum velit, elementum
+                  odio sed eget facilisis.”
+                </p>
+                <p class="testimonials-p-author">Kerry Frank</p>
+                <p class="testimonials-p-job-title">Owner of KerryFashion</p>
+              </div>
+
+              <div class="testimonials-div">
+                <p class="testimonials-p-header">
+                  “A pellen tesque pretium feugiat vel morbi sagittis lorem habi
+                  tasse cursus. Suspen dise tempus oncu enim pellen tesque est
+                  in neque, elit habi mattis.”
+                </p>
+                <p class="testimonials-p-author">Kelly Garcia</p>
+                <p class="testimonials-p-job-title">CEO at Liami</p>
+              </div>
+            </div>
           </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-        <div class="dots">
-          <span class="dot-active"></span>
-          <span class="dot-disactive"></span>
-          <span class="dot-disactive"></span>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
 
@@ -460,5 +543,47 @@
     <div class="bot-footer">
       <p>©2024 Jessica. Designed by TemplatesJungle.</p>
     </div>
+
+    <script>
+      // function navbarFunction() {
+      //   let x = document.getElementById("myLinks");
+      //   if (x.style.display === "block") {
+      //     x.style.display === "none";
+      //   } else {
+      //     x.style.display === "block";
+      //   }
+      // }
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
