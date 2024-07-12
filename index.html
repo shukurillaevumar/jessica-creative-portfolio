@@ -8,12 +8,16 @@
   </head>
   <body>
     <div class="main-body">
-      <nav class="topnav">
-        <ul id="myLinks">
+      <nav class="hidden-nav">
+        <ul>
           <div class="separator-div">
-            <img src="nav-icons/Jessica..png" alt="Jessica" />
+            <img class="brand" src="nav-icons/Jessica..png" alt="Jessica" />
             <div class="nav-icons-div">
-              <img class="nav-icon" src="nav-icons/Vector.png" alt="vector" />
+              <img
+                class="nav-icon brand"
+                src="nav-icons/Vector.png"
+                alt="vector"
+              />
               <img
                 class="nav-icon"
                 src="nav-icons/Vector (1).png"
@@ -70,6 +74,68 @@
           </a>
         </ul>
       </nav>
+      <div class="mobile-menu">
+        <p class="brand">Jessica</p>
+        <div id="m-menu">
+          <img src="nav-icons/gg_menu-right-alt.png" alt="menu" />
+        </div>
+        <nav id="drop-down">
+          <ul>
+            <div class="nav-icons-div">
+              <img
+                class="nav-icon brand"
+                src="nav-icons/Vector.png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (1).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (2).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (3).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (4).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (5).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (6).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (7).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (8).png"
+                alt="vector"
+              />
+              <img
+                class="nav-icon"
+                src="nav-icons/Vector (9).png"
+                alt="vector"
+              />
+            </div>
+          </ul>
+        </nav>
+      </div>
       <div class="main-photo">
         <div class="photo-desc-div">
           <p class="main-photo-p-small">VFX / Graphics head</p>
@@ -156,12 +222,16 @@
               Bachelors in Engineering in <br />
               Information Technology
             </p>
-            <p>Harvard School of Science and management</p>
+            <p class="qualifications-p-bottom">
+              Harvard School of Science and management
+            </p>
           </div>
           <div>
             <p class="qualifications-p-years">2004-2006</p>
             <p class="qualifications-p-title">Masters in Data Analysis</p>
-            <p>Harvard School of Science and management</p>
+            <p class="qualifications-p-bottom">
+              Harvard School of Science and management
+            </p>
           </div>
         </div>
 
@@ -221,21 +291,47 @@
           you on your journey to success and fulfillment.
         </p>
         <div class="btn-div">
-          <button class="gallery-btn-black">PHOTOGRAPHY</button>
-          <button class="gallery-btn-pink">GRAPHICS DESIGN</button>
-          <button class="gallery-btn-pink">ILLUSTRATIONS</button>
-          <button class="gallery-btn-pink">BRANDING</button>
+          <div class="btn-div-separator">
+            <button class="gallery-btn-black">PHOTOGRAPHY</button>
+            <button class="gallery-btn-pink">GRAPHICS DESIGN</button>
+          </div>
+          <div class="btn-div-separator">
+            <button class="gallery-btn-pink">ILLUSTRATIONS</button>
+            <button class="gallery-btn-pink">BRANDING</button>
+          </div>
         </div>
+        <!-- <div class="gallery-div-bot"> -->
         <div class="gallery-img-div">
-          <img src="gallery/pexels-anna-shvets-3986932.png" alt="photo" />
-          <img src="gallery/pexels-anna-shvets-3986982.png" alt="photo" />
-          <img src="gallery/pexels-anna-shvets-3987002.png" alt="photo" />
+          <img
+            class="item"
+            src="gallery/pexels-anna-shvets-3986932.png"
+            alt="photo"
+          />
+          <img
+            class="item"
+            src="gallery/pexels-anna-shvets-3986982.png"
+            alt="photo"
+          />
+          <img
+            class="item"
+            src="gallery/pexels-anna-shvets-3987002.png"
+            alt="photo"
+          />
         </div>
 
         <div class="gallery-img-div">
-          <img src="gallery/pexels-anna-shvets-3987014.png" alt="photo" />
-          <img src="gallery/pexels-anna-shvets-3987018.png" alt="photo" />
+          <img
+            class="item"
+            src="gallery/pexels-anna-shvets-3987014.png"
+            alt="photo"
+          />
+          <img
+            class="item"
+            src="gallery/pexels-anna-shvets-3987018.png"
+            alt="photo"
+          />
         </div>
+        <!-- </div> -->
 
         <button class="btn-bottom">VIEW ALL WORKS</button>
       </div>
@@ -361,7 +457,11 @@
       <div class="faqs">
         <p class="faqs-p">FAQs</p>
         <div class="faqs-separator">
-          <img src="Faqs img/pexels-kate-amos-2718447 1.png" alt="photo" />
+          <img
+            class="faqs-separator-img"
+            src="Faqs img/pexels-kate-amos-2718447 1.png"
+            alt="photo"
+          />
           <div class="questions-div">
             <div>
               <p>
@@ -520,6 +620,7 @@
           />
         </div>
       </div>
+
       <div class="footer-div">
         <p class="footer-p-text-green">HOME</p>
         <p class="footer-p-text">ABOUT</p>
@@ -545,15 +646,6 @@
     </div>
 
     <script>
-      // function navbarFunction() {
-      //   let x = document.getElementById("myLinks");
-      //   if (x.style.display === "block") {
-      //     x.style.display === "none";
-      //   } else {
-      //     x.style.display === "block";
-      //   }
-      // }
-
       let slideIndex = 1;
       showSlides(slideIndex);
 
@@ -584,6 +676,16 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
+      const m_menu = document.getElementById("m-menu");
+      const drop_down = document.getElementById("drop-down");
+      m_menu.addEventListener("click", () => {
+        if (drop_down.style.display === "none") {
+          drop_down.style.display = "block";
+        } else {
+          drop_down.style.display = "none";
+        }
+      });
     </script>
   </body>
 </html>
