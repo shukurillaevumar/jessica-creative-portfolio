@@ -27,10 +27,11 @@ body {
   display: none;
   position: absolute;
   top: 5rem;
-  right: 2rem;
-  width: 20rem;
+  width: 25rem;
+  left: 1rem;
   border-radius: 6px;
-  background-color: grey;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .mobile-menu nav ul {
@@ -1033,4 +1034,10 @@ nav ul {
   .footer-p-contact {
     font-size: 15px;
   }
+}
+
+.mobile-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
