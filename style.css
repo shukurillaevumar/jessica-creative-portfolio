@@ -1034,6 +1034,10 @@ nav ul {
   .footer-p-contact {
     font-size: 15px;
   }
+
+  .main-photo {
+    margin: 0px 20px;
+  }
 }
 
 .mobile-icons {
